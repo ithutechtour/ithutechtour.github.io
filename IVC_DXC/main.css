@@ -11,7 +11,7 @@ html, body {
 .input-elm {
 	margin-top: 1em;
 	width: 100%;
-	height: 2em;
+	height: 1em;
 	background-color: transparent;
 	border-bottom: 0.1em dotted #ffffff;
 	font-size: 1.1em;
@@ -20,7 +20,7 @@ html, body {
 	margin-top: 0.55em;
 	margin-bottom: 0.55em;
 	width: 2em;
-	height: 1.15em;
+	height: 1em;
 	vertical-align: middle;
 }
 .select-elm {
@@ -36,14 +36,14 @@ html, body {
 .textarea-elm {
 	margin-top: 1em;
 	width: 100%;
-	height: 9em;
+	height: 3em;
 	font-size: 1.1em;
 	background-color: transparent;
 	border: 0.1em dotted #ffffff;
 }
 .button-elm {
 	margin: auto;
-	margin-top: 5.75em;
+	margin-top: 1.25em;
 	width: 100%;
 	height: 2.75em;
 	font-size: 1.1em;
@@ -74,5 +74,5 @@ html, body {
 	font-size: 1.55em;
 }
 	#survey-form div {
-		margin-top: 3.75em;
+		margin-top: 1.75em;
 	}
