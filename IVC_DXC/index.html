@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thông Tin HUTECH IT OFFICE TOUR</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h1 id="title">Đăng ký Tham gia HUTECH IT OFFICE TOUR</h1>
+	<p id="description">Vui lòng điền đầy đủ thông tin<sup>*</sup> để tham gia HUTECH IT OFFICE TOUR <span class="desc-foot"><sub><sup>*</sup><sub></span></p>
+	<form method="POST" action="https://formspree.io/mwkkenbr" id="survey-form">
+	    <div>
+			<label for="name" id="name-label">1. Mã Số SV(*):</label><br>
+			<input class="input-elm" type="text" name="name" id="name" required placeholder="">
+		</div>
+		<div>
+			<label for="name" id="name-label">2. Họ Và Tên(*):</label><br>
+			<input class="input-elm" type="text" name="name" id="name" required placeholder="">
+		</div>
+		<div>
+			<label for="email" id="email-label">3. Email / SĐT(*):</label><br>
+			<input class="input-elm" type="email" name="email" id="email" required placeholder="">
+		</div>
+		<div>
+			<div>4. Bạn muốn tham gia tour nào ?(*)</div>
+			<ul>
+				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements" value="html5" id="checkbox-1"> <label for="checkbox-1">Tour 1: Công ty IVC, 13h ngày 13/11/2019</label></li>
+				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements" value="css3" id="checkbox-2"> <label for="checkbox-2">Tour 2: Công ty DXC, 12h30 ngày 14/11/2019</label></li>
+			</ul>
+		</div>
+		<div>
+			<label for="more-improvements">5. Bạn mong muốn điều gì khi tham gia HUTECH IT OFFICE TOUR </label>
+			<textarea class="textarea-elm" name="improvements-list" id="more-improvements"></textarea>
+		</div>
+		<button class="button-elm" type="submit" id="submit">Submit Form</button>
+	</form>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
