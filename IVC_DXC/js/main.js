@@ -2,6 +2,7 @@
 var script_url = "https://script.google.com/macros/s/AKfycbyb02aMAa2Il7ZTUambjbcGYq_rczAdYm-hRZr18KBR11o8apA/exec";
 
 
+
 $("#submitIOT").click(function(event) {
     var masv =  $.trim($("#masv").val()).replace(/ /g,'');
     var lop = $.trim($("#lop").val()).replace(/ /g,'').toUpperCase();
@@ -12,17 +13,16 @@ $("#submitIOT").click(function(event) {
 	var checked1 = $("#tour1").is(":checked");
 	var checked2 = $("#tour2").is(":checked");
 	var tour = 0;
-	if(checked1==true)
-		tour =1;
-	else if (checked2 == true)
-		tour =2;
-	if(checked1==1 && checked2==true)
-		tour=12;
-
-	//alert(tour);
-
+    if(checked1==true)
+		 tour =1;
+    else if (checked2 == true)
+		 tour =2;
+    if(checked1==1 && checked2==true)
+		 tour=12;
 	
+   
     var url = script_url + "?callback=result&masv=" + masv + "&lop=" + lop + "&email=" + email +  "&hovaten=" + hovaten + "&sdt=" + sdt +  "&tour=" + tour +  "&cauhoi=" +cauhoi + "&action=register";
+	console.log(url);
     if (masv == '' || lop == '' )
         return alert("Vui lòng điền thông tin Tên và Mã số sinh viên");
     var result = $(".input-group #email");

@@ -476,7 +476,7 @@ input {
 }
 
 .card-2 .card-heading {
-  background: url("../images/iot.png") top left/cover no-repeat;
+  background: url("../images/iot1.png") top left/cover no-repeat;
   width: 41.1%;
   display: table-cell;
 }
@@ -596,19 +596,4 @@ div#text_result {
   .p-b-100 {
     padding-bottom: 100px;
   }
-}
-.list-items {
-	list-style: none;
-}
-.checkboxes label {
-  display: block;
-  padding-right: 10px;
-  padding-left: 22px;
-  text-indent: -22px;
-}
-.checkboxes input {
-  vertical-align: middle;
-}
-.checkboxes label span {
-  vertical-align: middle;
 }
