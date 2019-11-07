@@ -8,6 +8,11 @@
 textarea#cauhoi::after,textarea#cauhoi::before{
   border: none;
 }
+.fix-font{
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+}
 /* ==========================================================================
    #GRID
    ========================================================================== */
@@ -191,7 +196,9 @@ h6 {
 .p-b-100 {
   padding-bottom: 0;
 }
-
+.m-t-15{
+  margin-top: 15px;
+}
 /* ==========================================================================
    #WRAPPER
    ========================================================================== */
@@ -479,6 +486,8 @@ input {
   background: url("../images/iot1.png") top left/cover no-repeat;
   width: 41.1%;
   display: table-cell;
+  background-position: center;
+  background-size: cover;
 }
 
 .card-2 .card-body {
@@ -499,6 +508,9 @@ input {
     float: left;
     margin-top: 3px;
     width: 20px;
+}
+.fix-join-tour{
+    padding: 5px 0px 0px 5px;
 }
 @keyframes loader {
   0% { left: -100px }
