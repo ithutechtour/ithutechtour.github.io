@@ -25,35 +25,30 @@
                    <h2 class="title">ĐĂNG KÍ THAM GIA IT OFFICE TOUR<br> <strong>NGÀY 13-14/11/2019</strong></h2>
                         <div class="input-group">
                             <input id="hovaten" class="input--style-2" type="text" placeholder="Họ và tên" name="hovaten">
-                            <span class="separator"> </span>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <input id="masv" class="input--style-2" type="text" placeholder="Mã Sinh Viên" name="masv" oninvalid="this.setCustomValidity('Nhập mã sinh viên')" oninput="setCustomValidity('')">
-                                    <span class="separator"> </span>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <input id="lop" class="input--style-2" type="text" placeholder="Lớp" name="lop">
-                                    <span class="separator"> </span>
                                 </div>
                             </div>
                         </div>
                         <div class="input-group">
                             <input id="email" class="input--style-2" type="email" placeholder="Email" name="email">
-                            <span class="separator"> </span>
                         </div>
 						<div class="input-group">
 						
 							<input type="text" name="DIENTHOAI" id="sdt" placeholder="Số điện thoại?" class="input--style-2" required="" oninvalid="this.setCustomValidity('Nhập số điện thoại')" oninput="setCustomValidity('')">
-                            <span class="separator"> </span>
 						</div>
  
                         <div class="fix-font">Bạn muốn tham gia tour nào ?(*)</div>
-							<div class="col-md-12 fix-join-tour"><input class="fix-checkbox" type="checkbox" id="tour1" name="tour1" /><span class="fix-font f-s-14">Tour 1: Công ty IVC, 13h ngày 13/11/2019</span></div>
-							<div class="col-md-12 fix-join-tour"><input class="fix-checkbox" type="checkbox" id="tour2" name="tour2"/><span class="fix-font f-s-14">Tour 2: Công ty DXC, 12h30 ngày 14/11/2019</span></div>
+							<div class="col-md-12 fix-join-tour"><input class="fix-checkbox" type="checkbox" id="tour1" name="tour1" /><span class="fix-font">Tour 1: Công ty IVC, 13h00 ngày 13/11/2019 (Còn Vé)</span></div>
+							<div class="col-md-12 fix-join-tour"><input class="fix-checkbox" type="checkbox" id="tour2" name="tour2"/> <span class="fix-font">Tour 2: Công ty DXC, 12h30 ngày 14/11/2019 (Còn Vé)</span></div>
 							
                         <div class="m-t-15">
                             <textarea id="cauhoi" class="input--style-2" placeholder="Bạn mong muốn điều gì khi tham gia HUTECH IT OFFICE TOUR?" style="border:none;width:100%" ></textarea>
