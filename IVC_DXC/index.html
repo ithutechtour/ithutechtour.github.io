@@ -1,39 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-	<title>Thông Tin HUTECH IT OFFICE TOUR</title>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="PHÁT TRIỂN ỨNG DỤNG DI ĐỘNG VỚI FLUTTER">
+    <title>PHÁT TRIỂN ỨNG DỤNG DI ĐỘNG VỚI FLUTTER</title>
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
+
 <body>
-	<h1 id="title">Đăng ký Tham gia HUTECH IT OFFICE TOUR</h1>
-	<p id="description">Vui lòng điền đầy đủ thông tin<sup> (*) </sup> để tham gia vào ngày 13/11, ngày 14/11</p>
-	<form method="POST" action="https://formspree.io/mwkkenbr" id="survey-form">
-	    <div>
-			<label for="name" id="name-label">1. Mã Số SV(*):</label><br>
-			<input class="input-elm" type="text" name="name" id="name" required placeholder="">
-		</div>
-		<div>
-			<label for="name" id="name-label">2. Họ Và Tên(*):</label><br>
-			<input class="input-elm" type="text" name="name" id="name" required placeholder="">
-		</div>
-		<div>
-			<label for="email" id="email-label">3. Email / SĐT(*):</label><br>
-			<input class="input-elm" type="text" name="email" id="email" required placeholder="">
-		</div>
-		<div>
-			<div>4. Bạn muốn tham gia tour nào ?(*)</div>
-			<ul>
-				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements" value="html5" id="checkbox-1"> <label for="checkbox-1">Tour 1: Công ty IVC, 13h ngày 13/11/2019</label></li>
-				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements" value="css3" id="checkbox-2"> <label for="checkbox-2">Tour 2: Công ty DXC, 12h30 ngày 14/11/2019</label></li>
-			</ul>
-		</div>
-		<div>
-			<label for="more-improvements">5. Bạn mong muốn điều gì khi tham gia HUTECH IT OFFICE TOUR </label>
-			<textarea class="textarea-elm" name="improvements-list" id="more-improvements"></textarea>
-		</div>
-		<button class="button-elm" type="submit" id="submit">Submit Form</button>
-	</form>
-	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <div class="card-inside" style="padding:0 30px">
+                    <br />
+                    <h2 class="title">ĐĂNG KÍ THAM GIA IT OFFICE TOUR<br> <strong>NGAY 13-14/11/2019</strong></h2>
+                        <div class="input-group">
+                            <input id="hovaten" class="input--style-2" type="text" placeholder="Họ và tên" name="hovaten">
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input id="masv" class="input--style-2" type="text" placeholder="Mã Sinh Viên" name="masv" oninvalid="this.setCustomValidity('Nhập mã sinh viên')" oninput="setCustomValidity('')">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input id="lop" class="input--style-2" type="text" placeholder="Lớp" name="lop">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input id="email" class="input--style-2" type="email" placeholder="Email" name="email">
+                        </div>
+						
+	                    <div class="input-group">
+                            <input id="sdt" class="input--style-2" type="text" placeholder="sdt" name="sdt">
+                        </div>
+						
+						
+						<div class="input-group">
+						  <div>Bạn muốn tham gia tour nào ?(*)</div>
+						  <div class="checkboxes">
+							<label for="tour1"><input type="checkbox" id="tour1" name="tour1" /> <span>Tour 1: Công ty IVC, 13h ngày 13/11/2019</span></label>
+							<label for="tour2"><input type="checkbox" id="tour2" name="tour2"/> <span>Tour 2: Công ty DXC, 12h30 ngày 14/11/2019</span></label>
+						  </div>
+						</div>
+						
+                        <div class="input-group">
+                            <textarea id="cauhoi" class="input--style-2" placeholder="Bạn mong muốn điều gì khi tham gia HUTECH IT OFFICE TOUR?" style="border:none;width:100%" ></textarea>
+                        </div>
+                        <div class="p-t-30">
+                            <button id="submitIOT" class="btn btn--radius btn--green">ĐĂNG KÍ</button>
+                        </div>
+
+                    <div id="box-loader" class="is-loading is-hidden">
+                        <div id="loader">
+                            <div id="shadow"></div>
+                            <div id="box"></div>
+                        </div>
+                    </div>
+                    <div id="result" class="is-result is-hidden">
+                        <div id="text_result">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 </body>
+
 </html>
