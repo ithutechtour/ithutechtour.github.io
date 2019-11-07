@@ -19,14 +19,13 @@ $("#submitIOT").click(function(event) {
 		 tour =2;
     if(checked1==1 && checked2==true)
 		 tour=12;
-	
-   
-    var url = script_url + "?callback=result&masv=" + masv + "&lop=" + lop + "&email=" + email +  "&hovaten=" + hovaten + "&sdt=" + sdt +  "&tour=" + tour +  "&cauhoi=" +cauhoi + "&action=register";
-	console.log(url);
-    if (masv == '' || lop == '' )
+	 
+	if (masv == '' || lop == '' )
         return alert("Vui lòng điền thông tin Tên và Mã số sinh viên");
-    var result = $(".input-group #email");
-    result.text("");
+    if(tour == 0) 
+	    return alert("Vui lòng chọn ít nhất 1 tour!");
+	 var result = $(".input-group #email");
+     result.text("");
 
     if (!validateEmail(email))
     {
@@ -35,6 +34,11 @@ $("#submitIOT").click(function(event) {
         result.attr("placeholder","Vui lòng nhập đúng định dạng @mail.com");
         return;
     }
+	
+    var url = script_url + "?callback=result&masv=" + masv + "&lop=" + lop + "&email=" + email +  "&hovaten=" + hovaten + "&sdt=" + sdt +  "&tour=" + tour +  "&cauhoi=" +cauhoi + "&action=register";
+	console.log(url);
+    
+   
     document.querySelector('.is-loading').classList.remove('is-hidden');
 
     var request = jQuery.ajax({
